@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asp.NetCoreLearn", "Asp.NetCoreLearn\Asp.NetCoreLearn.csproj", "{5C88706C-0424-47E3-9A3D-5E6E519BC65F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Asp.NetCoreLearn", "Asp.NetCoreLearn\Asp.NetCoreLearn.csproj", "{5C88706C-0424-47E3-9A3D-5E6E519BC65F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RozarPagesMovie", "RozarPagesMovie\RozarPagesMovie.csproj", "{79D4F033-07EC-4325-BBA6-C0ADEFE9F142}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RozarPagesMovie", "RozarPagesMovie\RozarPagesMovie.csproj", "{79D4F033-07EC-4325-BBA6-C0ADEFE9F142}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

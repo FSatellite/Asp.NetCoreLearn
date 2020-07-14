@@ -1,8 +1,10 @@
 {
   "dependencies": {
     "mssql1": {
+      "resourceId": null,
       "type": "mssql.local",
-      "connectionId": "RozarPagesMovieContext"
+      "connectionId": "RozarPagesMovieContext",
+      "secretStore": null
     }
   }
 }

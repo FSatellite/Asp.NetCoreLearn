@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using TodoApi.Models;
+using WebApi.Models;
 
-namespace TodoApi
+namespace WebApi
 {
     public class Startup
     {

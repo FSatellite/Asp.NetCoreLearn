@@ -51,7 +51,7 @@ function updateItem() {
         .then(() => getItems())
         .catch(error => console.error('Unable to update item.', error));
 
-    closeInput()
+    closeInput();
 
     return false;
 }
@@ -102,12 +102,6 @@ function _displayCount(itemCount) {
 
     document.getElementById('counter').innerText = `${itemCount} ${name}`;
 }
-
-//function _displayCount(itemCount) {
-//    const name = (itemCount === 1) ? 'to-do' : 'to-dos';
-
-//    document.getElementById('counter').innerText = `${itemCount} ${name}`;
-//}
 
 function displayEditForm(id) {
     const item = todos.find(item => item.id === id);

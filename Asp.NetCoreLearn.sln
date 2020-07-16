@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Asp.NetCoreLearn", "Asp.Net
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RozarPagesMovie", "RozarPagesMovie\RozarPagesMovie.csproj", "{79D4F033-07EC-4325-BBA6-C0ADEFE9F142}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoApi", "TodoApi\TodoApi.csproj", "{C3466650-0E7B-480A-9D54-EB04CA847B92}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi", "TodoApi\WebApi.csproj", "{C3466650-0E7B-480A-9D54-EB04CA847B92}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

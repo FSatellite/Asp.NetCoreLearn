@@ -22,7 +22,7 @@ namespace ToDoList.Controllers
             var items = await _todoItemService.GetIncompleteItemsAsync();
 
             //把条目置于model中
-            var model = new TodoViewModel()
+            var model = new ToDoViewModel()
             {
                 Items = items
             };

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 /// </summary>
 namespace ToDoList.Models
 {
-    public class TodoViewModel
+    public class ToDoViewModel
     {
         public TodoItem[] Items { get; set; }
     }

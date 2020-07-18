@@ -9,6 +9,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using ToDoList.Services;
+using Microsoft.EntityFrameworkCore;
+using ToDoList.Data;
 
 namespace ToDoList
 {
@@ -25,6 +27,9 @@ namespace ToDoList
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddSingleton<ITodoItemService, FakeTodoitemService>();
+            services.AddDbContext<ApplicationDbContext>(options =>
+               options.UseSqlite(Configuration.GetConnectionString("DefaultConnection"))
+           );
             services.AddControllersWithViews();
         }
 

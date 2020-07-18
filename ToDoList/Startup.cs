@@ -27,6 +27,8 @@ namespace ToDoList
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddSingleton<ITodoItemService, FakeTodoitemService>();
+            //经常和数据库打交道的服务，需要使用Scoped
+            services.AddScoped<ITodoItemService, TodoItemService>();
             services.AddDbContext<ApplicationDbContext>(options =>
                options.UseSqlite(Configuration.GetConnectionString("DefaultConnection"))
            );

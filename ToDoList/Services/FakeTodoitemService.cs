@@ -8,6 +8,11 @@ namespace ToDoList.Services
 {
     public class FakeTodoitemService : ITodoItemService
     {
+        public Task<bool> AddItemAsync(TodoItem item)
+        {
+            throw new NotImplementedException();
+        }
+
         public Task<TodoItem[]> GetIncompleteItemsAsync()
         {
             var item1 = new TodoItem()

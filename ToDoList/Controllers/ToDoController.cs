@@ -30,5 +30,17 @@ namespace ToDoList.Controllers
             //使用model渲染视图
             return View(model);
         }
+
+        public async Task<IActionResult> AddItem(TodoItem item)
+        {
+            if (!ModelState.IsValid)
+                return RedirectToAction("Index");
+
+            var successful = await _todoItemService.AddItemAsync(item);
+            if (!successful)
+                return BadRequest("Could not add item");
+
+            return RedirectToAction("Index");
+        }
     }
 }

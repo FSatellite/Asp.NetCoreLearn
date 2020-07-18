@@ -30,7 +30,8 @@ namespace ToDoList.Services
 
         public async Task<TodoItem[]> GetIncompleteItemsAsync()
         {
-            return await _dbContext.Items.Where(x => x.IsDone == false).ToArrayAsync();
+            //return await _dbContext.Items.Where(x => x.IsDone == false).ToArrayAsync();
+            return await _dbContext.Items.ToArrayAsync();
         }
 
         public async Task<bool> MarkDoneAsync(Guid id)
@@ -40,7 +41,7 @@ namespace ToDoList.Services
             if (item == null)
                 return false;
 
-            item.Result.IsDone = true;
+            item.Result.IsDone = item.Result.IsDone == true ? false : true;
             return await _dbContext.SaveChangesAsync() == 1;
         }
     }

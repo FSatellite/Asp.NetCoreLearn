@@ -22,7 +22,7 @@
             <tr>
                 <td>
                     <form asp-action="MarkDone" method="POST">
-                        <input type="checkbox" class="done-checkbox" />
+                        <input type="checkbox" class="done-checkbox" checked="@item.IsDone"/>
                         <input type="hidden" name="id" value="@item.Id"/>
                     </form>
                 </td>

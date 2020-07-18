@@ -33,5 +33,15 @@ namespace ToDoList.Services
             return await _dbContext.Items.Where(x => x.IsDone == false).ToArrayAsync();
         }
 
+        public async Task<bool> MarkDoneAsync(Guid id)
+        {
+            var item = _dbContext.Items.Where(x => x.Id == id).SingleOrDefaultAsync();
+
+            if (item == null)
+                return false;
+
+            item.Result.IsDone = true;
+            return await _dbContext.SaveChangesAsync() == 1;
+        }
     }
 }

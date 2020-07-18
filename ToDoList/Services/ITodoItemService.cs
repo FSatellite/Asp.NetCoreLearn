@@ -10,5 +10,6 @@ namespace ToDoList.Services
     {
         Task<TodoItem[]> GetIncompleteItemsAsync();
         Task<bool> AddItemAsync(TodoItem item);
+        Task<bool> MarkDoneAsync(Guid id);
     }
 }

@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace ToDoList.Controllers
 {
-    [Authorize]
+    //[Authorize]
     public class ToDoController : Controller
     {
         private readonly ITodoItemService _todoItemService;

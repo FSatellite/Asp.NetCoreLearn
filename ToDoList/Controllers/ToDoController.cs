@@ -5,9 +5,12 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using ToDoList.Models;
 using ToDoList.Services;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ToDoList.Controllers
 {
+    [Authorize]
     public class ToDoController : Controller
     {
         private readonly ITodoItemService _todoItemService;
